@@ -19,6 +19,10 @@ jobs:
         sudo mv terraform /usr/local/bin/
     
     - uses: actions/checkout@v1
+    - name: Terrafrom fmt
+      run: terraform fmt --recursive
+
+    - uses: actions/checkout@v1
     - name: Terrafrom init
       run: terraform init
     
