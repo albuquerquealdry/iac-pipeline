@@ -19,7 +19,4 @@ jobs:
         sudo mv terraform /usr/local/bin/
     - uses: actions/checkout@v1
     - name: Terrafrom plan
-      env:
-            TERRAFORM_VERSION: "0.12.15"
-      run: |
-        terraform plan
+      run: terraform plan
